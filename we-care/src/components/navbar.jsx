@@ -1,4 +1,5 @@
 import logo from "../Images/wecarelogo.png";
+import { Link } from "react-router-dom";
 import React from "react";
 const NavBar = () => {
   return (
@@ -43,7 +44,7 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <div className="cursor-pointer">
+          <Link className="cursor-pointer" to="/">
             <img
               className="inline mr-1"
               width="20px"
@@ -55,16 +56,22 @@ const NavBar = () => {
             <a className="font-poppins text-xl font-bold leading-45 tracking-normal text-center bg-gradient-to-r from-custom1 to-custom2 bg-clip-text text-transparent cursor-pointer">
               <span className="text-custom">We</span> Care+
             </a>
-          </div>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 hover:bg-white">
-            <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3">
+            <Link
+              to="/"
+              className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3"
+            >
               Home
-            </li>
-            <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3">
+            </Link>
+            <Link
+              to="/our-doctors"
+              className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3"
+            >
               Our Doctors
-            </li>
+            </Link>
             <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3">
               Book Appointment
             </li>
@@ -77,12 +84,18 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <p className="btn btn-outline hover:text-white text-blue-500 bg-opacity-100 lg:h-9 lg:w-36 w-24 rounded-full mx-1  hover:bg-gradient-to-r from-teal-300 via-teal-500 to-teal-700 ">
+          <Link
+            to="/register"
+            className="btn btn-outline hover:text-white text-blue-500 bg-opacity-100 lg:h-9 lg:w-36 w-24 rounded-full mx-1  hover:bg-gradient-to-r from-teal-300 via-teal-500 to-teal-700 "
+          >
             Register
-          </p>
-          <p className="btn btn-outline hover:text-white text-blue-500 bg-opacity-100 lg:h-9 lg:w-36 w-24 rounded-full hover:bg-gradient-to-r from-teal-300 via-teal-500 to-teal-700">
+          </Link>
+          <Link
+            to="/login"
+            className="btn btn-outline hover:text-white text-blue-500 bg-opacity-100 lg:h-9 lg:w-36 w-24 rounded-full hover:bg-gradient-to-r from-teal-300 via-teal-500 to-teal-700"
+          >
             Login
-          </p>
+          </Link>
           {/* <a className="btn mx-1">Register</a>
           <a className="btn">Login</a> */}
         </div>

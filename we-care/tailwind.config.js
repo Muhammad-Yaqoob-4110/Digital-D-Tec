@@ -14,6 +14,7 @@ module.exports = {
       },
       backgroundColor: {
         registerCustom: "rgba(80, 216, 219, 1)",
+        doctorsCustom: "rgba(23, 32, 72, 1)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
