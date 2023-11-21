@@ -11,10 +11,12 @@ module.exports = {
         custom: "rgba(23, 32, 72, 1)",
         customdim: "rgba(196, 196, 196, 1)",
         register: "rgba(51, 51, 51, 1)",
+        articles: "rgba(21, 158, 236, 1)",
       },
       backgroundColor: {
         registerCustom: "rgba(80, 216, 219, 1)",
         doctorsCustom: "rgba(23, 32, 72, 1)",
+        aboutUsCustom: "rgba(191, 210, 248, 1)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

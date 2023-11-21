@@ -27,21 +27,33 @@ const NavBar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
             >
-              <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1">
+              <Link
+                to="/"
+                className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1"
+              >
                 Home
-              </li>
-              <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1">
+              </Link>
+              <Link
+                to="/our-doctors"
+                className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1"
+              >
                 Our Doctors
-              </li>
+              </Link>
               <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1">
                 Book Appointment
               </li>
-              <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1">
+              <Link
+                to="/articles"
+                className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1"
+              >
                 Articles
-              </li>
-              <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1">
+              </Link>
+              <Link
+                to="/about-us"
+                className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1"
+              >
                 About Us
-              </li>
+              </Link>
             </ul>
           </div>
           <Link className="cursor-pointer" to="/">
@@ -75,12 +87,18 @@ const NavBar = () => {
             <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3">
               Book Appointment
             </li>
-            <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3">
+            <Link
+              to="/articles"
+              className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3"
+            >
               Articles
-            </li>
-            <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3">
+            </Link>
+            <Link
+              to="/about-us"
+              className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3"
+            >
               About Us
-            </li>
+            </Link>
           </ul>
         </div>
         <div className="navbar-end">
