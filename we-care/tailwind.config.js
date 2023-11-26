@@ -20,6 +20,8 @@ module.exports = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        "yeseva-one": ["Yeseva One", "sans-serif"],
+        "work-sans": ["Work Sans", "sans-serif"],
       },
     },
   },

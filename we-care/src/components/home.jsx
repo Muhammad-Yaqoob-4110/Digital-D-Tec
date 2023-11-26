@@ -81,7 +81,7 @@ const Home = () => {
       {/* Main Services Card */}
       <div className="p-5">
         <div className="flex justify-center">
-          <p className="text-3xl text-center lg:text-4xl font-poppins leading-18 font-poppins font-bold leading-24 tracking-normal italic font-sans  text-custom  leading-10 lg:w-96">
+          <p className="text-3xl text-center lg:text-4xl leading-18 font-poppins font-bold leading-24 tracking-normal italic text-custom  leading-10 lg:w-96">
             Our{" "}
             <span className="bg-gradient-to-r from-custom1 to-custom2 bg-clip-text text-transparent">
               Main Services{" "}
@@ -189,48 +189,29 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center w-full py-2 gap-2">
-        <a href="#item1" className="btn btn-xs">
-          1
-        </a>
-        <a href="#item2" className="btn btn-xs">
-          2
-        </a>
-        <a href="#item3" className="btn btn-xs">
-          3
-        </a>
-        <a href="#item4" className="btn btn-xs">
-          4
-        </a>
+      {/*Get Started*/}
+      <div className="flex justify-center mt-4">
+        <div className="bg-[#FFFFFF] shadow-md  lg:w-[1200px] rounded-md lg:p-10 w-4/5 p-5">
+          <div className="flex justify-center">
+            <p className="text-3xl text-center lg:text-4xl font-poppins leading-18 font-bold leading-24 tracking-normal italic  text-custom  leading-10  lg:w-[649px] my-2">
+              Get{" "}
+              <span className="bg-gradient-to-r from-custom1 to-custom2 bg-clip-text text-transparent ">
+                started with We Care+{" "}
+              </span>
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <p className="text-sm font-normal text-center  lg:w-[500px] my-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales
+              morbi tristique libero urna sem vitae. Viverra facilisis rhoncus
+              et, nibh nullam vitae laoreet.{" "}
+            </p>
+          </div>
+          <div className="flex justify-center my-2">
+            <Button text="Lets Get Started" />
+          </div>
+        </div>
       </div>
-      <svg
-        width="515"
-        height="528"
-        viewBox="0 0 515 528"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          width="515"
-          height="772"
-          transform="matrix(-1 2.21614e-10 2.21614e-10 1 515 0)"
-          fill="url(#paint0_linear_102_344)"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear_102_344"
-            x1="257.5"
-            y1="0"
-            x2="257.5"
-            y2="772"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.0104167" stop-color="#33B2C2" stop-opacity="0.56" />
-            <stop offset="0.447917" stop-color="#33B2C2" stop-opacity="0.13" />
-            <stop offset="0.776042" stop-color="#33B2C2" stop-opacity="0.03" />
-          </linearGradient>
-        </defs>
-      </svg>
     </div>
   );
 };

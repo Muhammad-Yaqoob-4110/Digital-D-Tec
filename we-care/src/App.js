@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import OurDoctors from "./components/ourDoctors";
 import Articles from "./components/articles";
 import AboutUs from "./components/aboutus";
+import BookAppointment from "./components/bookAppointment";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/our-doctors" element={<OurDoctors />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/book-appointment" element={<BookAppointment />} />
 
         {/* <Route path="/another-page" element={<AnotherPage />} /> */}
         {/* Add more routes as needed */}

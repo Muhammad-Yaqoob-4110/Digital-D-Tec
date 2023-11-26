@@ -39,9 +39,12 @@ const NavBar = () => {
               >
                 Our Doctors
               </Link>
-              <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1">
+              <Link
+                to="/book-appointment"
+                className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1"
+              >
                 Book Appointment
-              </li>
+              </Link>
               <Link
                 to="/articles"
                 className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal  text-custom hover:bg-white cursor-pointer  text-left p-1"
@@ -84,9 +87,12 @@ const NavBar = () => {
             >
               Our Doctors
             </Link>
-            <li className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3">
+            <Link
+              to="/book-appointment"
+              className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3"
+            >
               Book Appointment
-            </li>
+            </Link>
             <Link
               to="/articles"
               className="hover:text-blue-500 font-poppins text-18 font-semibold leading-27 tracking-normal text-center text-custom hover:bg-white cursor-pointer flex justify-center m-auto mx-3"
