@@ -8,6 +8,7 @@ import OurDoctors from "./components/ourDoctors";
 import Articles from "./components/articles";
 import AboutUs from "./components/aboutus";
 import BookAppointment from "./components/bookAppointment";
+import Profile from "./components/profile";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/articles" element={<Articles />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/book-appointment" element={<BookAppointment />} />
+        <Route path="/profile" element={<Profile />} />
 
         {/* <Route path="/another-page" element={<AnotherPage />} /> */}
         {/* Add more routes as needed */}

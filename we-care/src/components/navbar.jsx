@@ -1,6 +1,7 @@
 import logo from "../Images/wecarelogo.png";
 import { Link } from "react-router-dom";
 import React from "react";
+var login = true;
 const NavBar = () => {
   return (
     <div className="flex justify-center bg-white">
@@ -107,22 +108,58 @@ const NavBar = () => {
             </Link>
           </ul>
         </div>
-        <div className="navbar-end">
-          <Link
-            to="/register"
-            className="btn btn-outline hover:text-white text-blue-500 bg-opacity-100 lg:h-9 lg:w-36 w-24 rounded-full mx-1  hover:bg-gradient-to-r from-teal-300 via-teal-500 to-teal-700 "
-          >
-            Register
-          </Link>
-          <Link
-            to="/login"
-            className="btn btn-outline hover:text-white text-blue-500 bg-opacity-100 lg:h-9 lg:w-36 w-24 rounded-full hover:bg-gradient-to-r from-teal-300 via-teal-500 to-teal-700"
-          >
-            Login
-          </Link>
-          {/* <a className="btn mx-1">Register</a>
+        {login ? (
+          <div className="navbar-end">
+            {/* <a className="btn mx-1">Register</a>
           <a className="btn">Login</a> */}
-        </div>
+
+            <div className="dropdown dropdown-end">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost btn-circle avatar"
+              >
+                <div className="w-10 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                  />
+                </div>
+              </div>
+              <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li>
+                  <Link to="/profile" className="justify-between">
+                    Profile
+                    <span className="badge">New</span>
+                  </Link>
+                </li>
+                <li>
+                  <a>Settings</a>
+                </li>
+                <li>
+                  <a>Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          <div className="navbar-end">
+            <Link
+              to="/register"
+              className="btn btn-outline hover:text-white text-blue-500 bg-opacity-100 lg:h-9 lg:w-36 w-24 rounded-full mx-1  hover:bg-gradient-to-r from-teal-300 via-teal-500 to-teal-700 "
+            >
+              Register
+            </Link>
+            <Link
+              to="/login"
+              className="btn btn-outline hover:text-white text-blue-500 bg-opacity-100 lg:h-9 lg:w-36 w-24 rounded-full hover:bg-gradient-to-r from-teal-300 via-teal-500 to-teal-700"
+            >
+              Login
+            </Link>
+            {/* <a className="btn mx-1">Register</a>
+          <a className="btn">Login</a> */}
+          </div>
+        )}
       </div>
     </div>
   );
