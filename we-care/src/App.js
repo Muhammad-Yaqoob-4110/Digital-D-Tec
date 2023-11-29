@@ -9,6 +9,8 @@ import Articles from "./components/articles";
 import AboutUs from "./components/aboutus";
 import BookAppointment from "./components/bookAppointment";
 import Profile from "./components/profile";
+import Admin from "./components/admin";
+import CrudOpeations from "./components/crudOperations";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/book-appointment" element={<BookAppointment />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/doctors-crud" element={<CrudOpeations />} />
 
         {/* <Route path="/another-page" element={<AnotherPage />} /> */}
         {/* Add more routes as needed */}
