@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         navbar: "#0c1027",
+        footer: "#0c1027",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
